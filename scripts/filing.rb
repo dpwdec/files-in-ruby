@@ -31,3 +31,7 @@ FileUtils.cp_r("book.txt", "../new_book.txt")
 
 FileUtils.touch("../new_info.csv")
 
+my_file = File.open("book.txt", "w")
+my_file.write "some text"
+my_file.write "some more text"
+
