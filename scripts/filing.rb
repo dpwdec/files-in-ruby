@@ -1,3 +1,5 @@
+require 'fileutils'
+
 file = File.open("../resources/gems.txt")
 
 file_data = file.readlines.map(&:chomp)
@@ -19,7 +21,13 @@ end
 #the_time = Time.now.to_s
 #File.write("book.txt", the_time)
 
-entries = Dir.glob("**/**")
+#entries = Dir.glob("**/**")
 
-print entries
+#print entries
+
+# FileUtils.compare_file("book.txt", "../info.txt")
+
+FileUtils.cp_r("book.txt", "../new_book.txt")
+
+FileUtils.touch("../new_info.csv")
 
