@@ -4,4 +4,4 @@ This is a little test project to try out the different file and directory option
 
 ## Code
 
-All code is available from `filing.rb` for execution.
+All code is available from `scripts/filing.rb` for execution.
